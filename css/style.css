@@ -1,0 +1,104 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 120px;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.jumbotron {
+	height: 400px;
+	background-image: url('../img/header.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -150px;
+	color: #eaeaea;
+	overflow: hidden;
+}
+
+.jumbotron img {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #eaeaea;
+	box-shadow: 1px 1px 10px rgba(241, 208, 145, 0.863);
+}
+
+.jumbotron h1, .jumbotron p {
+	font-family: "Times New Roman";
+	text-shadow: 1px 1px 10px rgba(241, 208, 145, 0.863);
+}
+
+hr {
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	min-height: 450px;
+}
+
+.pkiri, .pkanan {
+	opacity: 0;
+	transform: translate(-50px, 0px) rotate(15deg);
+	transition: 1s;
+}
+
+.pkanan {
+	transform: translate(50px, 0px) rotate(-15deg);
+}
+
+.pkiri.pmuncul, .pkanan.pmuncul {
+	opacity: 1;
+	transform: translate(0,0)
+}
+
+.portfolio {
+	background-color: #eee;
+}
+
+.portfolio .img-thumbnail{
+	opacity: 0;
+	transform: translate(0px, -40px);
+	transition: .5s;
+}
+
+.portfolio .img-thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+.portfolio img{
+	width: 300px;
+	height: 300px;
+}
+
+.contact {
+	min-height: 700px;
+}
+
+footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #333;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
